@@ -44,4 +44,10 @@ def conjugadocplx(c):
     n = (c[0], c[1]*-1)
     return n
 
+def polarcplx(c):
+    norma = round(math.sqrt(c[0]**2+c[1]**2), 3)
+    angulo = round(math.atan2(c[1], c[0]), 3)
+    return norma, angulo
 
+if __name__ == "__main__":
+    #test enviar cmplx, test, readme, gitignore
