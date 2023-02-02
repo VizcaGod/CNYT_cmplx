@@ -64,5 +64,16 @@ def Fasecplx(c):
     angulo = math.atan2(c[1], c[0])
     return angulo
 
-if __name__ == "__main__":
-    #test enviar cmplx, test, readme, gitignore
+def Inversocplx(A):
+    real = -1 * (A[0])
+    img = -1 * (A[1])
+    c = (real, img)
+    return c
+
+def Restacplx(A, B):
+    real = A[0] - B[0]
+    img = A[1] - B[1]
+    c = (real, img)
+    return c
+
+
